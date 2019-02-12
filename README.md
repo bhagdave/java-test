@@ -11,7 +11,8 @@ A basic Maven project is already provided, with some core libraries included in 
 * Spring MVC web framework
 * Jackson JSON libraries 
 * Mockito for mocking test dependencies
-* AssertJ for fluent JUnit assertions.  
+* AssertJ for fluent JUnit assertions
+* SLF4J and Logback for logging
 
 If you would prefer to use alternative libraries please feel free to do so by amending the POM file as appropriate.
 
