@@ -18,7 +18,7 @@ import javax.sql.DataSource;
 @EnableTransactionManagement
 public class AppConfig implements WebMvcConfigurer {
     private static final String DB_DRIVER = "com.mysql.jdbc.Driver";
-    private static final String DB_URL = "jdbc:mysql://testdb.cfwyldcli8le.eu-west-1.rds.amazonaws.com:3306/practicaltest?useSSL=false";
+    private static final String DB_URL = "jdbc:mysql://practical-test.c2qqcx7fu6oj.us-east-2.rds.amazonaws.com:3306/practicaltest?useSSL=false";
     private static final String DB_USER = "test_user";
     private static final String DB_PASS = "testDB@123";
 
