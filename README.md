@@ -20,8 +20,10 @@ Some configuration is already provided in order to instantiate a data source to 
 
 Build a web service endpoint that conforms to a standard REST URL pattern that does the following: 
 
-* Retrieves all orders in JSON format for a supplied customer number.  Include details of the trim, engine and model for each vehicle.  The data should be structured appropriately.
+* Retrieves all orders in JSON format for a supplied customer number.  Include details of the equipment, trim, engine and model for each vehicle.  The data should be structured appropriately.
 * Returns an appropriate HTTP status for both standard and exceptional circumstances.
+
+Code should be optimised for performance wherever possible.
 
 If you have time, please feel free to add some unit and/or integration tests to cover your code.  A basic test harness for both unit and integration testing is already set up.  Again, please modify this to fit your needs if necessary.
 
