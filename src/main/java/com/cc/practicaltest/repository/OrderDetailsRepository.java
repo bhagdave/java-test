@@ -26,7 +26,7 @@ public class OrderDetailsRepository{
     }
 
     public List<OrderDetails> getOrdersByCustomerNumber(Long customerNumber){
-        String sql = "SELECT"+
+        String sql = "SELECT "+
                         "orders.order_number,"+
                         "sale_price,"+
                         "ov.model_name,"+
@@ -35,21 +35,21 @@ public class OrderDetailsRepository{
                         "te.wheel_type,"+
                         "te.infotainment_type,"+
                         "te.headlight_type,"+
-                        "te.upholstery_type"+
-                    "FROM"+
-                        "orders"+
-                    "JOIN ordered_vehicles ov on"+
-                        "ov.order_number = orders.order_number"+
-                    "JOIN models on"+
-                        "ov.model_name = models.model_name"+
-                    "JOIN engines e2 on"+
-                        "e2.engine_designation = ov.engine_designation"+
-                    "JOIN trim_equipment te on"+
-                        "te.trim_name = ov.trim_name"+
-                        "and orders.order_date > te.start_date"+
-                        "and (orders.order_date < te.end_date"+
-                        "or te.end_date is null)"+
-                    "WHERE"+
+                        "te.upholstery_type "+
+                    "FROM "+
+                        "orders "+
+                    "JOIN ordered_vehicles ov on "+
+                        "ov.order_number = orders.order_number "+
+                    "JOIN models on "+
+                        "ov.model_name = models.model_name "+
+                    "JOIN engines e2 on "+
+                        "e2.engine_designation = ov.engine_designation "+
+                    "JOIN trim_equipment te on "+
+                        "te.trim_name = ov.trim_name "+
+                        "and orders.order_date > te.start_date "+
+                        "and (orders.order_date < te.end_date "+
+                        "or te.end_date is null) "+
+                    "WHERE "+
                         "Customer_number = ?";
 
         return jdbcTemplate.query(
