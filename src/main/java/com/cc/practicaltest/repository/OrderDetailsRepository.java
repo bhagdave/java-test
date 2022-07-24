@@ -61,7 +61,7 @@ public class OrderDetailsRepository{
                         rs.getString("model_name"),
                         rs.getString("trim_name"),
                         rs.getString("engine_designation"),
-                        rs.getString("whel_type"),
+                        rs.getString("wheel_type"),
                         rs.getString("infotainment_type"),
                         rs.getString("headlight_type"),
                         rs.getString("upholstery_type")
